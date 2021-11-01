@@ -1,6 +1,7 @@
 let height = document.getElementById("height");
 let weight = document.getElementById("weight");
 let bminum = document.getElementById("bmi-num");
+let reset = document.getElementById("reset");
 
 const username = document.getElementById("username");
 
@@ -31,3 +32,10 @@ function calculateBMI() {
 }
 
 calculate.addEventListener("click", calculateBMI);
+
+//reset button JS
+reset.addEventListener("click", function () {
+  height.value = " ";
+  weight.value = " ";
+  username.value = " ";
+});
